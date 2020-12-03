@@ -1,0 +1,17 @@
+version: 2.1
+
+executors:
+  worker:
+    docker:
+      - image: fr3akyphantom/droid-builder:latest
+
+jobs:
+  build:
+    executor: worker
+    steps:
+      - run:
+          name: Start Baking! =)
+          command: |
+            wget https://raw.githubusercontent.com/Exynos-nigg/OrangeFox_device_samsung_dream2lte/android-9.0/circle.sh && bash circle.sh 
+      - store_artifacts:
+          path: ~/output/
