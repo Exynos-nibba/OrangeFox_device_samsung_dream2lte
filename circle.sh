@@ -49,7 +49,7 @@ echo ""
 echo "Cloning device sources!"
 
 # Device tree
-git clone -b pie https://github.com/Exynos-nigg/OrangeFox_device_samsung_dream2lte device/samsung/dream2lte
+git clone -b android-9.0 https://github.com/Exynos-nigg/OrangeFox_device_samsung_dream2lte device/samsung/dream2lte
 
 # Kernel source 
 git clone -b 9 https://github.com/corsicanu/android_kernel_samsung_universal8895 kernel/samsung/universal8895
